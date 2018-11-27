@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Homepage</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+</head>
+<body>
+      <div class="wrapper">
+            <header>
+
+                  <nav>
+
+                        <div class="menu-icon">
+                              <i class="fa fa-bars fa-2x"></i>
+                        </div>
+
+                        <div class="logo">
+                              LOGO
+							  (in progress)
+                        </div>
+
+                        <div class="menu">
+                              <ul>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Roulette</a></li>
+                                    <li><a href="#">CrashGame</a></li>
+                                    <li><a href="#">Contact</a></li>
+									<li><a class="log" href="#">Log In</a></li>
+                              </ul>
+                        </div>
+                  </nav>
+
+            </header>
+
+            <div class="content">
+                  <p>
+                     Roulette is a casino game named after the French word meaning little wheel. In the game, players may choose to place bets on either a single number, various groupings of numbers, the colors red or black, whether the number is odd or even, or if the numbers are high (19–36) or low (1–18).   
+                  </p>
+				  <p>
+						DIDN'T FIND AN ANSWER TO YOUR QUESTION?
+If you ever have any questions, or just want to say hi, feel free to contact our 24/7 live support by opening the chat on the bottom right corner of the page. Our support team of 12 members will respond to you in a matter of minutes (or even seconds!) Our support team is available 24 hours a day, 7 days a week, 365 days a year, to ensure you the best possible gambling experience.
+				  </p>
+            </div>
+      </div>
+
+      <script type="text/javascript">
+
+      // Menu-toggle button
+
+      $(document).ready(function() {
+            $(".menu-icon").on("click", function() {
+                  $("nav ul").toggleClass("showing");
+            });
+      });
+
+      // Scrolling Effect
+
+      $(window).on("scroll", function() {
+            if($(window).scrollTop()) {
+                  $('nav').addClass('black');
+            }
+
+            else {
+                  $('nav').removeClass('black');
+            }
+      })
+
+
+      </script>
+
+</body>
+</html>
